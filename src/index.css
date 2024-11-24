@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 min-h-screen;
+  }
+}
+
+.glass-morphism {
+  @apply bg-gray-900/70 backdrop-blur-lg border border-gray-700/50;
+}
+
+.glass-card {
+  @apply glass-morphism rounded-xl shadow-xl;
+}
+
+.floating-nav {
+  @apply fixed top-4 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-5xl;
+}
+
+.input-dark {
+  @apply bg-gray-800/50 border-gray-700 text-gray-100 placeholder-gray-400 focus:border-indigo-500 focus:ring-indigo-500;
+}
+
+.btn-primary {
+  @apply bg-indigo-600 hover:bg-indigo-700 text-white transition-colors;
+}
+
+.prose {
+  @apply text-gray-300;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  @apply text-gray-100;
+}
+
+.prose strong {
+  @apply text-gray-200;
+}
+
+.prose a {
+  @apply text-indigo-400 hover:text-indigo-300;
+}
+
+.prose blockquote {
+  @apply border-indigo-500 text-gray-300;
+}
+
+.prose code {
+  @apply bg-gray-800 text-gray-300;
+}
+
+.prose ul, .prose ol {
+  @apply text-gray-300;
+}
+
+.prose li {
+  @apply text-gray-300;
+}
